@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Calculator</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="calculator">
+    <input type="text" id="display" disabled>
+    <div class="keys">
+
+        <div class="p1">
+        <button onclick="pressKey('1')">1</button>
+        <button onclick="pressKey('2')">2</button>
+        <button onclick="pressKey('3')">3</button>
+        <div class="op">
+            <button onclick="pressKey('+')">+</button>
+        </div>
+    </div>
+
+    <div class="p2">
+        <button onclick="pressKey('4')">4</button>
+        <button onclick="pressKey('5')">5</button>
+        <button onclick="pressKey('6')">6</button>
+        <div class="op">
+            <button onclick="pressKey('-')">-</button>
+        </div>
+    </div>
+
+    <div class="p3">    
+        <button onclick="pressKey('7')">7</button>
+        <button onclick="pressKey('8')">8</button>
+        <button onclick="pressKey('9')">9</button>
+        <div class="op">
+            <button onclick="pressKey('*')">*</button>
+        </div>
+    </div>
+
+    <div class="p4">
+        <button onclick="pressKey('0')">0</button>
+        <div class="res">
+            <button onclick="pressKey('C')">C</button>
+            <button onclick="calculateResult()">=</button>
+        </div>
+        <div class="op">
+            <button onclick="pressKey('/')">/</button>
+        </div>
+    </div>
+
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
